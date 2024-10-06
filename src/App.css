@@ -1,0 +1,102 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* border: 20px solid red; */
+  /* margin-top: 500px; */
+}
+
+/* Card styling */
+.card {
+  /* display: flex; */
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  width: 350px; /* Fixed width for consistency */
+  animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+
+/* Heading styling */
+h2 {
+  /* margin-top: 500px; */
+  font-size: 1.8rem;
+  color: #343a40; /* Dark gray for the text */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Image styling */
+img {
+  /* border-radius: 50%;  */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 100%; /* Fixed size for images */
+  height: 150px;
+  display: block; /* Ensure image behaves as a block element */
+}
+
+/* Name styling */
+h3 {
+  font-size: 1.5rem;
+  color: #17a2b8; /* Bootstrap info color */
+  margin: 10px 0;
+}
+
+/* Date styling */
+p {
+  font-size: 1rem;
+  color: #6c757d; /* Light gray for date text */
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+button:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide in from the top */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
